@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сайт портфоліо</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> 
+
+  <style>
+    .carousel-open:checked + .carousel-item1 {
+        position: static;
+        opacity: 100;
+    }
+    .carousel-item1 {
+        -webkit-transition: opacity 0.6s ease-out;
+        transition: opacity 0.6s ease-out;
+    }
+    #carousel-1:checked ~ .control-1,
+    #carousel-2:checked ~ .control-2,
+    #carousel-3:checked ~ .control-3 {
+        display: block;
+    }
+
+	.carousel-open:checked + .carousel-item2 {
+        position: static;
+        opacity: 100;
+    }
+    .carousel-item2 {
+        -webkit-transition: opacity 0.6s ease-out;
+        transition: opacity 0.6s ease-out;
+    }
+
+    #carousel-4:checked ~ .control-4,
+    #carousel-5:checked ~ .control-5,
+    #carousel-6:checked ~ .control-6 {
+        display: block;
+    }
+
+	.carousel-open:checked + .carousel-item3 {
+        position: static;
+        opacity: 100;
+    }
+    .carousel-item3 {
+        -webkit-transition: opacity 0.6s ease-out;
+        transition: opacity 0.6s ease-out;
+    }
+
+    #carousel-7:checked ~ .control-7,
+    #carousel-8:checked ~ .control-8,
+    #carousel-9:checked ~ .control-9 {
+        display: block;
+    }
+
+</style>
+
+</head>
+
+<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('images/index01.jpg');">
+
+  <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
+    
+	<div id="profile" class="w-full lg:w-4/5 rounded-lg lg:rounded-l-lg lg:rounded-r-lg shadow-2xl bg-white opacity-95 mx-6 lg:mx-0">	
+		<div class="p-4 md:p-12 text-center lg:text-left">
+			<div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('images/index1.jpg')"></div>			
+			<h1 class="text-center text-3xl font-bold pt-8 lg:pt-0">Мої подорожі</h1>
+			<div class="mx-auto lg:mx-0 w-5/5 pt-3 border-b-2 border-red-500 opacity-25"></div>
+			<div class="pt-4 pb-8" >
+				<button class="bg-red-700 hover:bg-red-900 text-white font-bold py-2 px-4 rounded-full"  >
+				  <a href=index.html> На головну</a><br>
+				</button> 
+			</div>	
+
+			<p class="pt-8 pb-8 font-bold text-3xl">Гданськ, Польша 2019р</p>
+
+			<div class="carousel relative shadow-2xl bg-white">
+				<div class="carousel-inner relative overflow-hidden w-full">
+				  <!--Slide 1-->
+					<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+					<div class="carousel-item1 absolute opacity-0" style="height:50vh;">
+						<img src="images/p2_1_3.jpg">
+					</div>
+					<label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+					<label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+					
+					<!--Slide 2-->
+					<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+					<div class="carousel-item1 absolute opacity-0" style="height:50vh;">
+						<img src="images/p2_1_2.jpg">
+					</div>
+					<label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+					<label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+					
+					<!--Slide 3-->
+					<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+					<div class="carousel-item1 absolute opacity-0" style="height:50vh;">
+						<img src="images/p2_1_1.jpg">
+					</div>
+					<label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+					<label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+								
+				</div>
+			</div>
+
+			<p class="pt-8 pb-8 font-bold text-3xl">Стокгольм, Швеція 2019р</p>
+
+			<div class="carousel relative shadow-2xl bg-white">
+				<div class="carousel-inner relative overflow-hidden w-full">
+				  <!--Slide 4-->
+					<input class="carousel-open" type="radio" id="carousel-4" name="carousel1" aria-hidden="true" hidden="" checked="checked">
+					<div class="carousel-item2 absolute opacity-0" style="height:50vh;">
+						<img src="images/p2_2_1.jpg">
+					</div>
+					<label for="carousel-6" class="prev control-4 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+					<label for="carousel-5" class="next control-4 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+					
+					<!--Slide 5-->
+					<input class="carousel-open" type="radio" id="carousel-5" name="carousel1" aria-hidden="true" hidden="">
+					<div class="carousel-item2 absolute opacity-0" style="height:50vh;">
+					</div>
+					<label for="carousel-4" class="prev control-5 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+					<label for="carousel-6" class="next control-5 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+					
+					<!--Slide 6-->
+					<input class="carousel-open" type="radio" id="carousel-6" name="carousel1" aria-hidden="true" hidden="">
+					<div class="carousel-item2 absolute opacity-0" style="height:50vh;">
+					</div>
+					<label for="carousel-5" class="prev control-6 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+					<label for="carousel-4" class="next control-6 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+								
+				</div>
+			</div>
+
+			<p class="pt-8 pb-8 font-bold text-3xl">Вена, Австрія 2021р</p>
+
+			<div class="carousel relative shadow-2xl bg-white">
+				<div class="carousel-inner relative overflow-hidden w-full">
+				  <!--Slide 7-->
+					<input class="carousel-open" type="radio" id="carousel-7" name="carousel2" aria-hidden="true" hidden="" checked="checked">
+					<div class="carousel-item3 absolute opacity-0" style="height:50vh;">
+						<img src="images/p2_3_1.jpg">					
+					</div>
+					<label for="carousel-9" class="prev control-7 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+					<label for="carousel-8" class="next control-7 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+					
+					<!--Slide 8-->
+					<input class="carousel-open" type="radio" id="carousel-8" name="carousel2" aria-hidden="true" hidden="">
+					<div class="carousel-item3 absolute opacity-0" style="height:50vh;">
+						<img src="images/p2_3_2.jpeg">						
+					</div>
+					<label for="carousel-7" class="prev control-8 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+					<label for="carousel-9" class="next control-8 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+					
+					<!--Slide 9-->
+					<input class="carousel-open" type="radio" id="carousel-9" name="carousel2" aria-hidden="true" hidden="">
+					<div class="carousel-item3 absolute opacity-0" style="height:50vh;">
+						<img src="images/p2_3_3.jpeg">
+					</div>
+					<label for="carousel-8" class="prev control-9 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+					<label for="carousel-7" class="next control-9 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+								
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	  <div class="absolute top-0 right-0 h-12 w-18 p-4">
+		<button class="js-change-theme focus:outline-none">🌙</button>
+	  </div>
+
+</div>
+
+    <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+    <script>
+	    tippy('.link',{
+	    placement: 'bottom'
+	    })
+
+	const toggle = document.querySelector('.js-change-theme');
+	const body = document.querySelector('body');
+	const profile = document.getElementById('profile');
+		
+	toggle.addEventListener('click', () => {
+
+	    if (body.classList.contains('text-gray-900')) {
+		   toggle.innerHTML = "☀️";
+		   body.classList.remove('text-gray-900');
+		   body.classList.add('text-gray-100');
+		   profile.classList.remove('bg-white');
+		   profile.classList.add('bg-gray-900');
+        } else
+	    {
+	  	   toggle.innerHTML = "🌙";
+		   body.classList.remove('text-gray-100');
+		   body.classList.add('text-gray-900');
+		   profile.classList.remove('bg-gray-900');			
+		   profile.classList.add('bg-white');		
+	  }
+	});	
+</script>
+	
+</body>
+
+</html>
